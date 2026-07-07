@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yasir-agdo-mt"
+version = "1.0.0"
+description = "A Python library for one-dimensional magnetotelluric inversion using the Adam Gradient Descent Optimizer (AGDO)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+authors = [
+    {name = "Muhammad Fadhilah Al Yasir Harahap"}
+]
+
+keywords = [
+    "magnetotellurics",
+    "geophysics",
+    "inversion",
+    "AGDO",
+    "optimization",
+    "electromagnetics"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7"
+]
+
+[tool.setuptools.packages.find]
+include = ["yasir_agdo_mt*"]
