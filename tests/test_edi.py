@@ -19,7 +19,7 @@ def edi_file():
 
     root = Path(__file__).resolve().parents[1]
 
-    return root / "L09S10_edt.edi"
+    return root / "data" / "edi" / "L09S10_edt.edi"
 
 
 def test_read_edi_returns_data(edi_file):
