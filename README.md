@@ -2,6 +2,7 @@
 
 <p align="center">
 
+[![PyPI](https://img.shields.io/pypi/v/yasir-agdo-mt.svg)](https://pypi.org/project/yasir-agdo-mt/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21479038.svg)](https://doi.org/10.5281/zenodo.21479038)
 [![Tests](https://github.com/alyasirharahap/AGDO-MT-Inversion/actions/workflows/tests.yml/badge.svg)](https://github.com/alyasirharahap/AGDO-MT-Inversion/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
