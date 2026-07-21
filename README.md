@@ -2,10 +2,9 @@
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Tests](https://img.shields.io/badge/Tests-36%20Passed-brightgreen.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21479038.svg)](https://doi.org/10.5281/zenodo.21479038)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 </p>
 
