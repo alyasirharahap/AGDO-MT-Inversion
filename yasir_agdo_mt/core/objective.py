@@ -71,10 +71,32 @@ def evaluate_mt_model(
     phase_obs: np.ndarray,
 ) -> float:
     """
-    Evaluate a 1D MT model by comparing calculated and observed
-    MT responses using RMSE.
+    Evaluate a 1D magnetotelluric model by computing the RMSE
+    between observed and calculated responses.
+
+    Parameters
+    ----------
+    model : np.ndarray
+        Model vector containing layer resistivities followed by
+        layer thicknesses.
+    frequency : np.ndarray
+        Frequency array (Hz).
+    rho_obs : np.ndarray
+        Observed apparent resistivity.
+    phase_obs : np.ndarray
+        Observed phase (degrees).
+
+    Returns
+    -------
+    float
+        Root mean square error (RMSE).
     """
-    
+
+    model = np.asarray(model, dtype=float)
+
+    if model.ndim != 1:
+        raise ValueError("Model vector must be one-dimensional.")
+
     if len(model) % 2 == 0:
         raise ValueError(
             "Model vector must contain n resistivities and n-1 thicknesses."
@@ -96,9 +118,7 @@ def evaluate_mt_model(
         frequency,
     )
 
-    phase_cal = phase(
-        Z
-    )
+    phase_cal = phase(Z)
 
     return rmse_mt(
         rho_obs,
